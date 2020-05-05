@@ -121,6 +121,8 @@
                     </div>
                 </div>
                 <div class="footerSheet_font">《为健康寻源》栏目  版权所有</div>
+                <div class="footerSheet_font"></div>
+                <div class="footerSheet_font" @click="beianhao">ICP备案号：琼ICP备19004493号-1</div>
             </div>
         </div>
     </div>
@@ -248,6 +250,9 @@
                 } else {
                     this.searchBarFixed = false
                 }
+            },
+            beianhao(){
+                location.href = 'http://www.beian.miit.gov.cn/'
             },
             onSearch(){
                 console.log('搜索')
